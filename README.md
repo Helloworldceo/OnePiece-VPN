@@ -28,7 +28,16 @@ The app has no servers built in: you need an `ss://` link (or a subscription URL
 
 ### Mac
 1. Open the `.dmg` and drag **OnePieceVPN** into **Applications**.
-2. Open it. If macOS blocks it, go to **System Settings → Privacy & Security → Open Anyway**.
+2. Open it. macOS will say Apple could not verify the app (it isn't signed by Apple). To allow it, once:
+   1. Click **Done** on the warning (not *Move to Bin*).
+   2. Open **System Settings → Privacy & Security** and scroll down to **Security**.
+   3. Next to *"OnePieceVPN was blocked…"*, click **Open Anyway**, enter your password, then **Open Anyway** again.
+
+   If it says the app **"is damaged and can't be opened"**, or there's no *Open Anyway* button, open **Terminal**,
+   run this, then open the app again:
+   ```
+   xattr -dr com.apple.quarantine /Applications/OnePieceVPN.app
+   ```
 3. **Servers → Import** → paste your `ss://` link.
 4. Click **Connect** and enter your Mac password (macOS requires it to create the VPN).
 5. If macOS asks whether OnePiece VPN may use your Keychain, click **Always Allow**.
@@ -72,7 +81,15 @@ The app has no servers built in: you need an `ss://` link (or a subscription URL
 
 ### Mac
 1. 打开 `.dmg`，将 **OnePieceVPN** 拖入「应用程序」。
-2. 打开应用。如被 macOS 阻止，前往「系统设置 → 隐私与安全性 → 仍要打开」。
+2. 打开应用。macOS 会提示“无法验证”该应用（因为它未经 Apple 签名）。只需允许一次：
+   1. 在提示框中点击「完成」（不要点「移到废纸篓」）。
+   2. 打开「系统设置 → 隐私与安全性」，向下滚动到「安全性」。
+   3. 在“已阻止 OnePieceVPN……”旁点击「仍要打开」，输入密码，再点一次「仍要打开」。
+
+   如果提示应用**“已损坏，无法打开”**，或者没有「仍要打开」按钮，请打开「终端」，运行以下命令，然后重新打开应用：
+   ```
+   xattr -dr com.apple.quarantine /Applications/OnePieceVPN.app
+   ```
 3. 「服务器」→「导入」→ 粘贴 `ss://` 链接。
 4. 点击「连接」并输入 Mac 密码（macOS 创建 VPN 需要密码）。
 5. 如 macOS 询问是否允许使用钥匙串，点击「始终允许」。
