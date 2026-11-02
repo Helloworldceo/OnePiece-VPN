@@ -13,7 +13,7 @@
 
 ### Android
 1. Open the `.apk` and allow installing apps if asked.
-2. **Servers → Import** → **Scan QR code**, **From image**, or **Paste from clipboard**. You can also just tap the link on your phone.
+2. **Servers → Import** → **Scan QR code**, **QR code from image**, or **Paste from clipboard**. You can also just tap the link on your phone.
 3. Tap the button on **Home** and accept the VPN request.
 
 ### Windows
@@ -39,7 +39,7 @@
 
 ### Android
 1. 打开 `.apk`，如有提示允许安装。
-2. 「服务器」→「导入」→「扫描二维码」、「从图片」或「从剪贴板粘贴」。也可以在手机上直接点击链接。
+2. 「服务器」→「导入」→「扫描二维码」、「从图片识别二维码」或「从剪贴板粘贴」。也可以在手机上直接点击链接。
 3. 在「首页」点击按钮，并允许 VPN 请求。
 
 ### Windows
