@@ -9,106 +9,60 @@
 | Windows on ARM | `…-windows-arm64.msi` |
 | Mac (Apple Silicon) | `…-macos-arm64.dmg` |
 
-## Connect in 3 steps
-
-You need a **QR code** or a **link** from the person who runs the server (it starts with `vless://` or `ss://`). Keep it private — it's your personal access.
-
-### 1. Install the app
-Download the file for your device from **[Releases](../../releases/latest)** and install it (see *Install* below for each device).
-
-### 2. Add your server — choose one way
-
-**A. Scan the QR code (phone)**
-1. Open OnePiece VPN → **Servers → Import → Scan QR code**.
-2. Allow camera access and point it at the QR code.
-   *Got the QR as a picture?* Tap **Import → QR code from image** and pick it from your photos.
-
-**B. Paste the link (phone or computer)**
-1. Copy the whole link you received (from WeChat, email, etc.).
-2. Open OnePiece VPN → **Servers → Import → Paste from clipboard**. On a computer, paste it into the box and click **Import**.
-
-The server appears in **Servers** (named e.g. *OnePiece*). Tap it to select it.
-
-### 3. Connect
-1. Go to **Home** and tap the big **Connect** button.
-2. Accept the VPN request (phone) or enter your password / allow admin (computer).
-3. Open google.com or youtube.com to check it works.
-
-**Not working?** Make sure you copied the *entire* link, try again on mobile data, or ask for a new QR code. Trial codes stop after 1 GB.
-
-## Install
+You need a **link or QR code** from whoever runs your server. Keep it private.
 
 ### Android
-1. Open the `.apk` and allow installing apps if asked.
-2. **Servers → Import** → **Scan QR code**, **QR code from image**, or **Paste from clipboard**. You can also just tap the link on your phone.
-3. Tap the button on **Home** and accept the VPN request.
+1. Install the `.apk`.
+2. Tap **+** → scan the QR code or paste the link (or just tap the link on your phone).
+3. Tap the big button.
 
-### Windows
-1. Run the `.msi`. If Windows warns you: **More info → Run anyway**.
-2. **Servers → Import** → paste your link.
-3. **Connect** → **Restart as administrator** → **Yes** (first time only).
+- **Test** (bottom left) shows which servers work on your current Wi-Fi or mobile data.
+- **Auto** always uses the fastest server. **Rule** keeps Chinese apps direct; **Global** sends everything through the VPN.
 
 ### Mac
-1. Open the `.dmg` and drag **OnePieceVPN** into **Applications**.
-2. Open it. If macOS blocks it: **Done** → **System Settings → Privacy & Security** → **Open Anyway**.
-   If it says the app is damaged, run this in **Terminal**:
-   ```
-   xattr -dr com.apple.quarantine /Applications/OnePieceVPN.app
-   ```
-3. **Servers → Import** → paste your link.
-4. **Connect** and enter your Mac password.
+1. Drag **OnePieceVPN** into **Applications** and open it. Enter your Mac password **once** (only now, after installing).
+   Blocked? **System Settings → Privacy & Security → Open Anyway**.
+2. **Servers → Import** → paste the link → **Connect**.
+
+- Works for every app (browser, Claude, Android Studio…). Turn other VPNs off first.
+- **Settings → Connect when the Mac starts**: connected before other apps go online.
+
+### Windows
+1. Run the `.msi`. Warned? **More info → Run anyway**.
+2. **Servers → Import** → paste the link → **Connect** → **Yes**.
+
+- Works for every app. Turn other VPNs off first.
+
+**Not working?** Copy the whole link, try mobile data, or ask for a new QR code.
 
 ---
 
-# 安装
+# OnePiece VPN（中文）
 
 **[⬇ 下载](../../releases/latest)**
 
-## 三步连接
-
-你需要服务器提供者发给你的 **二维码** 或 **链接**（以 `vless://` 或 `ss://` 开头）。请勿分享给他人。
-
-### 1. 安装应用
-在 **[Releases](../../releases/latest)** 下载适合你设备的文件并安装（各设备安装方法见下方）。
-
-### 2. 添加服务器（任选一种）
-
-**A. 扫描二维码（手机）**
-1. 打开 OnePiece VPN →「服务器」→「导入」→「扫描二维码」。
-2. 允许使用相机，对准二维码。
-   *二维码是图片？* 点「导入」→「从图片识别二维码」，在相册中选择。
-
-**B. 粘贴链接（手机或电脑）**
-1. 复制收到的完整链接（微信、邮件等）。
-2. 打开 OnePiece VPN →「服务器」→「导入」→「从剪贴板粘贴」。电脑上粘贴到输入框后点「导入」。
-
-服务器会出现在「服务器」列表（例如 *OnePiece*），点击选中。
-
-### 3. 连接
-1. 回到「首页」，点击大按钮「连接」。
-2. 手机上允许 VPN 请求；电脑上输入密码或允许管理员权限。
-3. 打开 google.com 或 youtube.com 检查是否成功。
-
-**连不上？** 确认复制了*完整*链接，试试切换到移动数据，或向提供者索取新的二维码。试用码用完 1 GB 后会停止。
-
-## 安装
+你需要服务器提供者发给你的 **链接或二维码**，请勿分享给他人。
 
 ### Android
-1. 打开 `.apk`，如有提示允许安装。
-2. 「服务器」→「导入」→「扫描二维码」、「从图片识别二维码」或「从剪贴板粘贴」。也可以在手机上直接点击链接。
-3. 在「首页」点击按钮，并允许 VPN 请求。
+1. 安装 `.apk`。
+2. 点 **+** → 扫描二维码或粘贴链接（也可以在手机上直接点击链接）。
+3. 点击大按钮。
+
+- 左下角 **测试**：显示哪些服务器在当前 Wi-Fi 或移动数据下可用。
+- **自动** 始终使用最快的服务器。**规则** 让国内应用直连；**全局** 全部走 VPN。
+
+### Mac
+1. 把 **OnePieceVPN** 拖入「应用程序」并打开，输入 **一次** Mac 密码（仅在安装后这一次）。
+   被阻止？「系统设置 → 隐私与安全性 → 仍要打开」。
+2. 「服务器」→「导入」→ 粘贴链接 →「连接」。
+
+- 对所有应用有效（浏览器、Claude、Android Studio…）。请先关闭其他 VPN。
+- 「设置 → 开机时自动连接」：在其他应用联网之前就已连接。
 
 ### Windows
 1. 运行 `.msi`。如有警告：「更多信息」→「仍要运行」。
-2. 「服务器」→「导入」→ 粘贴链接。
-3. 「连接」→「以管理员身份重新启动」→「是」（仅首次）。
+2. 「服务器」→「导入」→ 粘贴链接 →「连接」→「是」。
 
-### Mac
-1. 打开 `.dmg`，将 **OnePieceVPN** 拖入「应用程序」。
-2. 打开应用。如被阻止：「完成」→「系统设置 → 隐私与安全性」→「仍要打开」。
-   如提示应用已损坏，在「终端」运行：
-   ```
-   xattr -dr com.apple.quarantine /Applications/OnePieceVPN.app
-   ```
-3. 「服务器」→「导入」→ 粘贴链接。
-4. 「连接」并输入 Mac 密码。
+- 对所有应用有效。请先关闭其他 VPN。
+
+**连不上？** 确认复制了完整链接，试试移动数据，或索取新的二维码。
